@@ -1,16 +1,21 @@
-# 🎣 Jogo de Pesca - Trabalho de SO
-### *SSC0140 – Sistemas Operacionais I*
+# <p align="center">Pescaria no Gelo - Trabalho de SO</p>
+### <p align="center">*SSC0140 – Sistemas Operacionais I*</p>
 
-[Introdução](#1-introdução) •
-[Descrição Geral](#2-descrição-geral-do-jogo) •
-[Estrutura de Arquivos](#3-estrutura-de-arquivos) •
-[Estruturas de Dados](#4-estruturas-de-dados) •
-[Conceitos de SO](#5-aplicação-de-conceitos-de-sistemas-operacionais) •
-[Instalação & Execução](#6-instalação-execução-e-guia-de-jogabilidade) •
-[Conclusão](#7-conclusão) •
-[Participantes](#8-participantes) •
-[Apresentação em Vídeo](#9-apresentação-em-vídeo)
-![img.png](assets/img.png)
+<p align="center">
+    <a href="#1-introdução">Introdução</a> •
+    <a href="#2-descrição-geral-do-jogo">Descrição Geral</a> •
+    <a href="#3-estrutura-de-arquivos">Estrutura de Arquivos</a> •
+    <a href="#4-estruturas-de-dados">Estruturas de Dados</a> •
+    <a href="#5-aplicação-de-conceitos-de-sistemas-operacionais">Conceitos de SO</a> •
+    <a href="#6-instalação-execução-e-guia-de-jogabilidade">Instalação & Execução</a> •
+    <a href="#7-conclusão">Conclusão</a> •
+    <a href="#8-participantes">Participantes</a> •
+    <a href="#9-apresentação-em-vídeo">Apresentação em Vídeo</a>
+</p>
+
+<div align="center">
+    <img src="assets/img.png">
+</div>
 
 ---
 
