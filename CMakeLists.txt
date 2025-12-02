@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
 project(trabSO C CXX)
 
+if (MSVC)
+    add_compile_options(/wd4576)
+endif()
+
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 20)
 

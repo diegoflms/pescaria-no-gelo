@@ -24,8 +24,7 @@ void InicializarJogo(EstadoJogo &jogo) {
     jogo.peixes[2] = {2, -300, 1, 260, false};
 
     // inicia threads
-    for (int i = 0; i < 3; i++)
-    {
+    for (int i = 0; i < 3; i++) {
         jogo.threadsPeixes[i] = std::thread(ThreadMovPeixe, &jogo, i);
     }
 }

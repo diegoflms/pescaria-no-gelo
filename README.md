@@ -310,4 +310,4 @@ Em resumo, o trabalho ajudou a agregar conhecimento e colocar o que foi visto em
 ---
 
 ## 9. Apresentação em Vídeo
-É possível acessar o vídeo através desse link: <link do video>
+É possível acessar o vídeo através desse [link](https://youtu.be/6z1GM1_kfNQ)
