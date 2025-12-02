@@ -77,12 +77,13 @@ ESC – Sair
 
 ## 3. Estrutura de Arquivos
 - `/assets` — contém os arquivos `.png` utilizados como sprites
-- `/cmake-build-debug` — pasta com a configuração de execução de C++
-- `/include` — todos os arquivos `.h` do projeto, incluindo definição de structs, declarações de threads, etc
-- `raylib-master` — diretório com a biblioteca gráfica Raylib, utilizada para a construção da interface visual do jogo
-- `/src` — arquivos `.cpp` responsáveis pela implementação do jogo em si
-- `CMakeLists.txt` — diretório gerado automaticamente pelo CMake contendo binários, objetos compilados e configurações de execução
-- `README.md` — documentação com manual de uso, descrição técnica, etc
+- `/include` — arquivos `.h` do projeto (declaração de structs, threads, protótipos de funções)
+- `/src` — arquivos `.cpp` contendo a implementação do jogo
+- `/raylib-master` — biblioteca Raylib incluída localmente no projeto
+- `CMakeLists.txt` — arquivo de configuração do CMake usado para compilar o projeto
+- `README.md` — documentação do projeto, explicação técnica e manual do usuário
+
+*Observação: pastas como `cmake-build-debug` são geradas automaticamente pelo CLion e não fazem parte da estrutura do projeto.*
 
 ---
 
@@ -228,7 +229,7 @@ if (jogo.profundidadeLinha == -1) {
 }
 ```
 
-### 5.5 Interação entre Threads, Mutex e Semáforo
+### 5.4 Interação entre Threads, Mutex e Semáforo
 A sincronização funciona assim:
 
 1. **Thread do peixe** movimenta os peixes continuamente (com mutex).
@@ -255,7 +256,7 @@ Esta seção funciona como um **tutorial completo** para instalar, compilar e ro
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/jogo-pesca-so.git
+git clone https://github.com/diegoflms/jogo-pesca-so.git
 cd jogo-pesca-so
 ```
 

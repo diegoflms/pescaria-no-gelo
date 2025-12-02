@@ -18,12 +18,12 @@ void InicializarJogo(EstadoJogo &jogo) {
     jogo.texPescador = LoadTexture("../assets/pescador.png");
     jogo.texPeixe    = LoadTexture("../assets/peixe.png");
 
-    // velocidade inicial (difícil)
+    // velocidade inicial
     jogo.peixes[0] = {0,  -50, 1, 220, false};
     jogo.peixes[1] = {1, -150, 1, 240, false};
     jogo.peixes[2] = {2, -300, 1, 260, false};
 
-    // INICIAR THREADS
+    // inicia threads
     for (int i = 0; i < 3; i++)
     {
         jogo.threadsPeixes[i] = std::thread(ThreadMovPeixe, &jogo, i);
@@ -82,13 +82,9 @@ void AtualizarJogo(EstadoJogo &jogo) {
             jogo.semaforoLinha.release();
     }
 
-    // =============================================
-    // SUBIR PEIXE
-    // =============================================
-    if (jogo.carregandoPeixe)
-    {
-        if (jogo.profundidadeLinha == -1)
-        {
+    // subir peixe
+    if (jogo.carregandoPeixe) {
+        if (jogo.profundidadeLinha == -1) {
             std::lock_guard<std::mutex> lock(jogo.mutexPeixes);
 
             jogo.qtdPeixes++;
@@ -97,7 +93,7 @@ void AtualizarJogo(EstadoJogo &jogo) {
             p.capturado = false;
             p.x = -GetRandomValue(50, 300);
 
-            // todos os peixes aceleram → + dificuldade
+            // todos os peixes aceleram
             for (int i = 0; i < 3; i++)
                 jogo.peixes[i].velocidade += 20;
 
